@@ -1,0 +1,92 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #222222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #16324f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #16324f;
+    color: white;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    background-color: #16324f;
+    padding: 10px 12px;
+    margin: 4px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: white;
+    color: #16324f;
+    text-decoration: underline;
+}
+
+/* Contact form layout */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+#contact-form label {
+    display: block;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font: inherit;
+}
+
+#contact-form button {
+    padding: 12px;
+    background-color: #16324f;
+    color: white;
+    border: 2px solid #16324f;
+    border-radius: 5px;
+    cursor: pointer;
+    font: inherit;
+}
+
+#contact-form button:hover,
+#contact-form button:focus {
+    background-color: white;
+    color: #16324f;
+}
+

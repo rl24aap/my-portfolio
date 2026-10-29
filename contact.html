@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">About Me</a>
+            <a href="interests.html">Technical Interests</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="project-details.html">Project Details</a>
+            <a href="contact.html" aria-current="page">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Me</h2>
+
+        <p>
+            If you have a question about my work, please use
+            the form below.
+        </p>
+
+        <form id="contact-form">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your message</label>
+            <textarea id="message" name="message"
+                      rows="5" required></textarea>
+
+            <button type="submit">Submit message</button>
+
+            <p id="form-status" role="status"
+               aria-live="polite"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>My Portfolio</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("form-status");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            if (form.checkValidity()) {
+                status.textContent =
+                    "Thank you! Your form has been checked successfully. This demonstration does not send your message.";
+                form.reset();
+            } else {
+                form.reportValidity();
+            }
+        });
+    </script>
+
+</body>
+</html>
