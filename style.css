@@ -90,3 +90,16 @@ nav a:focus {
     color: #16324f;
 }
 
+
+/* Technical interests image */
+main img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: contain;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+
