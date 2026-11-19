@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,10 +37,11 @@
             <label for="email">Email address</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Your message</label>
-            <textarea id="message" name="message"
-                      rows="5" required></textarea>
+           <label for="message">Your message</label>
 
+<textarea id="message" name="message"
+    rows="5" maxlength="500" required
+    placeholder="Write your message here..."></textarea>
             <button type="submit">Submit message</button>
 
             <p id="form-status" role="status"
@@ -70,3 +72,4 @@
 
 </body>
 </html>
+
