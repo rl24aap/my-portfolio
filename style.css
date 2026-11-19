@@ -1,4 +1,5 @@
 
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -90,16 +91,131 @@ nav a:focus {
     color: #16324f;
 }
 
-
 /* Technical interests image */
 main img {
     display: block;
     width: 100%;
     max-width: 600px;
-    height: 300px;
-    object-fit: contain;
+    height: auto;
     margin: 20px auto;
     border-radius: 8px;
+}
+
+/* Technical skills progress bars */
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.skill p span {
+    font-weight: normal;
+    color: #555;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    width: 60%;
+    height: 100%;
+    background-color: #183653;
+    border-radius: 10px;
+}
+
+figure img,
+.ai-image img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.ai-image {
+    text-align: center;
+    margin: 5px auto;
+}
+
+.ai-image p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+.interest-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 0;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+/* Portfolio project cards */
+#projects section {
+    background-color: #f4f6f8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #183653;
+}
+
+#projects section h3 {
+    color: #183653;
+    margin-top: 0;
+}
+
+#projects section a {
+    color: #183653;
+    font-weight: bold;
+}
+
+#projects section a:hover {
+    text-decoration: none;
+}
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0 15px;
+}
+
+.project-tags span {
+    display: inline-block;
+    background-color: #183653;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* Project card hover effect */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+footer {
+    background-color: #183653;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 
